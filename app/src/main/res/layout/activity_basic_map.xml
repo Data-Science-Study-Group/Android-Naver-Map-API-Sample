@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".BasicMap">
 
-    <Button
-        android:id="@+id/btBasic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="기본 지도 보기"/>
+    <fragment
+        android:id="@+id/basic_map"
+        android:name="com.naver.maps.map.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
