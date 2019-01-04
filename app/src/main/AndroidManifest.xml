@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         // 네이버 지도
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
@@ -22,7 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BasicMap"></activity>
+        <activity android:name=".BasicMap" />
+        <activity android:name=".ZoomMap"></activity>
     </application>
 
 </manifest>

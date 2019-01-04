@@ -13,13 +13,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btBasic = (Button)findViewById(R.id.btBasic);
-        btBasic.setOnClickListener(new View.OnClickListener() {
+        Button btBasic = (Button) findViewById(R.id.btBasic);
+        Button btZoomPos = (Button) findViewById(R.id.btZoomPos);
+
+        View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,BasicMap.class);
-                startActivity(intent);
+                switch (v.getId()) {
+                    case R.id.btBasic:
+                        Intent intent = new Intent(MainActivity.this, BasicMap.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.btZoomPos:
+                        Intent intent2 = new Intent(MainActivity.this, ZoomMap.class);
+                        startActivity(intent2);
+                        break;
+                }
             }
-        });
+        };
+
+        btBasic.setOnClickListener(listener);
+        btZoomPos.setOnClickListener(listener);
     }
 }
