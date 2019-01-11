@@ -54,5 +54,6 @@ public class MainActivity extends AppCompatActivity {
         btBasic.setOnClickListener(listener);
         btZoomPos.setOnClickListener(listener);
         btGeocoding.setOnClickListener(listener);
+        btMarker.setOnClickListener(listener);
     }
 }

@@ -23,10 +23,10 @@ public class MarkerMap extends AppCompatActivity implements OnMapReadyCallback {
         setContentView(R.layout.activity_marker_map);
 
         // 지도 객체 받아오기
-        MapFragment mapFragment = (MapFragment) getSupportFragmentManager().findFragmentById(R.id.zoompos_map);
+        MapFragment mapFragment = (MapFragment) getSupportFragmentManager().findFragmentById(R.id.marker_map);
         if (mapFragment == null) {
             mapFragment = MapFragment.newInstance();
-            getSupportFragmentManager().beginTransaction().add(R.id.zoompos_map, mapFragment).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.marker_map, mapFragment).commit();
         }
 
         mapFragment.getMapAsync(this);
