@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tngusmiso.mapsample">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -25,7 +25,8 @@
         </activity>
         <activity android:name=".BasicMap" />
         <activity android:name=".ZoomMap" />
-        <activity android:name=".GeocodingMap"></activity>
+        <activity android:name=".GeocodingMap" />
+        <activity android:name=".MarkerMap"/>
     </application>
 
 </manifest>

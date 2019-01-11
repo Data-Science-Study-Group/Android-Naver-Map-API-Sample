@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Button btBasic = (Button) findViewById(R.id.btBasic);
         Button btZoomPos = (Button) findViewById(R.id.btZoomPos);
         Button btGeocoding = (Button) findViewById(R.id.btGeocoding);
+        Button btMarker = (Button) findViewById(R.id.btMarker);
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
@@ -41,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.btGeocoding:
                         intent = new Intent(MainActivity.this, GeocodingMap.class);
+                        break;
+                    case R.id.btMarker:
+                        intent = new Intent(MainActivity.this, MarkerMap.class);
                         break;
                 }
                 startActivity(intent);
