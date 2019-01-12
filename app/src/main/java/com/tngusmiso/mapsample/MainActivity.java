@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Button btZoomPos = (Button) findViewById(R.id.btZoomPos);
         Button btGeocoding = (Button) findViewById(R.id.btGeocoding);
         Button btMarker = (Button) findViewById(R.id.btMarker);
+        Button btUiOverlay =(Button)findViewById(R.id.btUiOverlay);
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
@@ -46,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.btMarker:
                         intent = new Intent(MainActivity.this, MarkerMap.class);
                         break;
+                    case R.id.btUiOverlay:
+                        intent = new Intent(MainActivity.this, UiAndOverlay.class);
+                        break;
                 }
                 startActivity(intent);
             }
@@ -55,5 +59,6 @@ public class MainActivity extends AppCompatActivity {
         btZoomPos.setOnClickListener(listener);
         btGeocoding.setOnClickListener(listener);
         btMarker.setOnClickListener(listener);
+        btUiOverlay.setOnClickListener(listener);
     }
 }

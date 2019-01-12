@@ -14,7 +14,7 @@
         // 네이버 지도
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
-            android:value="ar7to3c004" />
+            android:value="ig6ulh2ean" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -26,7 +26,8 @@
         <activity android:name=".BasicMap" />
         <activity android:name=".ZoomMap" />
         <activity android:name=".GeocodingMap" />
-        <activity android:name=".MarkerMap"/>
+        <activity android:name=".MarkerMap" />
+        <activity android:name=".UiAndOverlay"></activity>
     </application>
 
 </manifest>
